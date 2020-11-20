@@ -1,0 +1,74 @@
+.TH man 1 "11/14/2020" "0.32" "hsh man page"
+.SH NAME
+.B hsh
+- a simple UNIX command interpreter (shell).
+.SH SYNOPSIS
+hsh [command_name [argument ...]]
+.br
+.SH DESCRIPTION
+.B hsh
+is a command interpreter for the system. The shell reads lines from the terminal or a file,
+interprets them, and executes other commands. The shell works for both interactive and
+non-interactive use (shell scripts), so commands can be typed directly to the running shell
+or put into a file to be executed directly by the shell.
+.br
+Any shell builtins are executed internally to the shell, without spawning a new process.
+.SH OPTIONS
+.B hsh
+options - none
+.SH EXAMPLES
+.br
+Interactive mode:
+.br
+$ ./hsh
+.br
+($) /bin/ls
+.br
+hsh main.c shell.c
+.br
+($)
+.br
+($) exit
+.br
+$
+.br
+---------------------
+.br
+Non-interactive mode:
+.br
+$ echo "/bin/ls" | ./hsh
+.br
+hsh main.c shell.c test_ls_2
+.br
+$
+.br
+$ cat test_ls_2
+.br
+/bin/ls
+.br
+/bin/ls
+.br
+$
+.br
+$ cat test_ls_2 | ./hsh
+.br
+hsh main.c shell.c test_ls_2
+.br
+hsh main.c shell.c test_ls_2
+.br
+$
+.br
+.SH EXIT STATUS
+.br
+Errors that are detected by the shell, such as a syntax error, will cause the shell
+to exit with a non-zero exit status.
+If the shell is not an interactive shell, the execution of the shell file will be aborted.
+Otherwise the shell will return the exit status of the last command executed,
+or if the exit builtin is used with a numeric argument, it will return the argument.
+.br
+.SH SEE ALSO
+sh(1), echo(1), getopt(1), ksh(1), test(1), environ(7)
+.br
+
+.SH AUTHORS
+Sang Nguyen and Valerie Nierenberg
