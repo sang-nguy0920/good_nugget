@@ -24,7 +24,7 @@ _strcpy(path_copy, path);
 token = strtok(path_copy, ":"); /* returns path up until it hits the : delim */
 		if (token == NULL)
 		token = strtok(NULL, ":");
-		printf("Search NULL token: %s\n", token);
+		
 while (token != NULL)
 {
 path_len = _strlen(token);
