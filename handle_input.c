@@ -44,13 +44,11 @@ exit(EXIT_FAILURE);
 }
 
 token = strtok(line, "\n\t\r "); /* removing delims spaces from input */
-printf("PARSE Token: %s\n", token);
 
 i = 0;
 while (token != NULL)
 {
 tokens[i] = token;
-printf("PARSE Token: %s\n", *tokens);
 token = strtok(NULL, "\n\t\r "); /*setting input to tokens */
 i++;
 }
