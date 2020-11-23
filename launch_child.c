@@ -24,7 +24,6 @@ if (child_pid == 0)/* success */
 execve_stat = execve(fullpath, tokens, envp);
 if (execve_stat == -1)
 return (-1);/* on error */
-_exit(EXIT_SUCCESS);
 }
 else
 wait(&stat);
