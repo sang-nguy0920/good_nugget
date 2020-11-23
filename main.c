@@ -67,6 +67,7 @@ else
 alert = 1; /* 1 if fullpath is malloc*/
 child_stat = child(fullpath, tokens);
 if (child_stat == -1)
+exit(EXIT_SUCCESS);
 errors(4);
 free_everything(tokens, path, line, fullpath, alert); /*free everythiSng */
 }
