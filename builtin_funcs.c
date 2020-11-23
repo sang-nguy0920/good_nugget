@@ -66,14 +66,3 @@ int hsh_unsetenv(void)
 {
 return (0);
 }
-
-/**
-* hsh_alias - function that prints a list of all aliases
-* @void : void
-* Description: function that prints a list of all aliases
-* Return: 0
-*/
-int hsh_alias(void)
-{
-return (0);
-}
