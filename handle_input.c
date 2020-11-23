@@ -39,7 +39,7 @@ tokens = malloc(sizeof(char) * BUFFER);
 
 if (tokens == NULL)
 {
-errors(3);
+perror("Error: ");
 exit(EXIT_FAILURE);
 }
 

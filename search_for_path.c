@@ -17,7 +17,7 @@ old_path_len = _strlen(path);
 path_copy = malloc(sizeof(char) * old_path_len + 1);
 if (path_copy == NULL)
 {
-errors(3);
+perror("Error: ");
 return (NULL);
 }
 _strcpy(path_copy, path);
@@ -30,7 +30,7 @@ path_len = _strlen(token);
 fullpath = malloc(sizeof(char) * (path_len + cmd_len) +2);
 	if (fullpath == NULL)
 	{
-	errors(3);
+	perror("Error: ");
 	return (NULL);
 	}
 _strcpy(fullpath, token); /* copies path of PATH up to delim to fullpath */

@@ -32,7 +32,6 @@ typedef struct built_s
 
 int child(char *fullpath, char **tokens);
 char **copy_env(char **env_copy, unsigned int env_len);
-void errors(int error);
 int exec_builtin(char **tokens);
 char *_getenv(const char *name);
 char *_getline(FILE *fp);

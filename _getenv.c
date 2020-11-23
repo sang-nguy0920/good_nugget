@@ -28,14 +28,14 @@ compare = _strncmp((char *)name, var, len);
 	value = strtok(NULL, "\n");
 				if (value == '\0')
 				{
-				errors(3);
+				perror("Error: ");
 				exit(EXIT_FAILURE);
 				}
 	path_len = _strlen(value);
 	path = malloc(sizeof(char) * path_len + 1);
 				if (path == NULL)
 				{
-				errors(3);
+				perror("Error: ");
 				return (NULL);
 				}
 	path = _strcpy(path, value); /* copies pathname to path */
@@ -63,7 +63,7 @@ unsigned int i;
 env_copy = malloc(sizeof(char **) * (env_len));
 if (env_copy == NULL)
 {
-errors(3);
+perror("Error: ");
 return (NULL);
 }
 
@@ -76,7 +76,7 @@ var_len = _strlen(var); /*gets length of environ[] */
 env_copy[i] = malloc(sizeof(char) * var_len + 1);
 if (env_copy[i] == NULL)
 {
-errors(3);
+perror("Error: ");
 return (NULL);
 }
 
