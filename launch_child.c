@@ -13,10 +13,6 @@ pid_t child_pid;
 int stat;
 int execve_stat;
 char **envp = environ;
-/*
-* environ points to array of enviroment strings made available
-* to the process that started the execve call
-*/
 
 child_pid = fork(); /*creates new process by duplicating the calling process*/
 if (child_pid == -1)/* on failure, child created */
