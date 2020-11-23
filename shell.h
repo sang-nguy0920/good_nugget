@@ -37,6 +37,7 @@ void prompt(int fd, struct stat buf);
 char *search_for_path(char *cmd, char *fullpath, char *path);
 int hsh_env(void);
 int hsh_exit(void);
+int hsh_cd(void);
 int shell_num_builtins(built_s builtin[]);
 void signal_handler(int sig);
 int _strcmp(char *name, char *var, unsigned int len);
