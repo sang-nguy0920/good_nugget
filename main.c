@@ -69,8 +69,6 @@ child_stat = child(fullpath, tokens);
 if (child_stat == -1)
 {
 errors(4);
-_exit(EXIT_SUCCESS);
-}
 free_everything(tokens, path, line, fullpath, alert); /*free everything */
 }
 return (0);
