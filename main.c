@@ -60,7 +60,7 @@ if (builtin_stat == -1) /* is exit builtin */
 exit(EXIT_SUCCESS);
 alert = 0; /* 0 if fullpath isn't malloc*/
 path = _getenv("PATH");
-fullpath = search_for_path(tokens[0], fullpath, path);
+fullpath = search_for_path(tokens[0], fullpath, path); /* gets pathname */
 if (fullpath == NULL)
 fullpath = tokens[0];
 else
