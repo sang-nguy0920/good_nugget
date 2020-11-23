@@ -42,6 +42,13 @@ return (0);
 
 int hsh_cd(void)
 {
+char *cwd;
+char s[100];
+
+cwd = getcwd(s, 100);
+
+chdir(cwd);
+
 return (0);
 }
 
