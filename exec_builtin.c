@@ -26,9 +26,7 @@ return (i);
 int exec_builtin(char **tokens)
 {
 int stat;
-unsigned int len;
-unsigned int num;
-unsigned int i;
+unsigned int len, num, i;
 
 	built_s builtin[] = {
 		{"exit", hsh_exit},
