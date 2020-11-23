@@ -27,9 +27,8 @@ char *fullpath, int alert)
  */
 void free_dp(char **array, unsigned int len)
 {
-	unsigned int i;
+	unsigned int i = 0;
 
-	i = 0;
 	while (i < len)
 	{
 		free(array[i]);
