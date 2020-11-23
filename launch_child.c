@@ -22,8 +22,9 @@ exit(EXIT_FAILURE);
 if (child_pid == 0)/* success */
 {
 execve_stat = execve(fullpath, tokens, envp);
+}
 if (execve_stat == -1)
-kill (child_pid, SIGKILL);
+{
 return (-1);/* on error */
 }
 else
