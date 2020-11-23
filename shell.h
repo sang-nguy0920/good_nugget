@@ -10,9 +10,6 @@
 #include <unistd.h>
 #include <signal.h>
 
-#define MALLOC_ERROR "Can't malloc space\n"
-#define FORK_ERROR "Can't fork and create child process\n"
-#define PATH_ERROR "No such file or directory\n"
 #define BUFFER 1024
 extern char **environ;
 
