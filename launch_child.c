@@ -17,8 +17,7 @@ child_pid = fork(); /*creates new process by duplicating the calling process*/
 if (child_pid == -1)/* on failure */
 {
 errors(1);
-kill (child_pid, SIGKILL);
-exit(EXIT_FAILURE);
+_exit(EXIT_FAILURE);
 }
 if (child_pid == 0)/* success */
 {
