@@ -1,0 +1,2 @@
+var = environ[i];
+var_len = _strlen(var); /*gets length of environ[] */
