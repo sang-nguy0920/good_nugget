@@ -31,3 +31,17 @@ i++;
 }
 return (0);
 }
+
+
+/**
+* hsh_cd - function that changes directory
+* @void : void
+* Description: function that changes directory
+* Return: 0
+*/
+
+int hsh_cd(void)
+{
+
+return (0);
+}
