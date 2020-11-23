@@ -31,6 +31,7 @@ unsigned int len, num, i;
 	built_s builtin[] = {
 		{"exit", hsh_exit},
 		{"env", hsh_env},
+		{"cd", hsh_cd},
 		{NULL, NULL}
 	};
 
