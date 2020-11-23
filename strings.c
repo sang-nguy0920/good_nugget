@@ -10,8 +10,7 @@
 */
 int _strcmp(char *name, char *var, unsigned int len)
 {
-unsigned int var_len;
-unsigned int i;
+unsigned int var_len, i;
 
 var_len = _strlen(var);
 if (var_len != len)
@@ -36,9 +35,8 @@ return (0);
  */
 int _strncmp(char *name, char *var, unsigned int len)
 {
-unsigned int i;
+unsigned int i = 0;
 
-i = 0;
 while (i < len)
 {
 if (name[i] != var[i])
