@@ -1,0 +1,13 @@
+/**
+* _getenv - function that gets an environment var.
+* @name : env var name
+* Description: function that gets an environment var.
+* Return: value of var else NULL
+*/
+
+var = environ[i];
+var_len = _strlen(var); /*gets length of environ[] */
+
+sigint
+-"handle" EOF, ctrl D
+-exit missing one output check
