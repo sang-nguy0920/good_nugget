@@ -43,13 +43,13 @@ errors(3);
 exit(EXIT_FAILURE);
 }
 
-token = strtok(line, "\t\n\r\a\b\e\v\f\\ "); /* removing delims spaces from input */
+token = strtok(line, "\t\n\r\a\b\v\f "); /* removing delims spaces from input */
 
 i = 0;
 while (token != NULL)
 {
 tokens[i] = token;
-token = strtok(NULL, "\t\n\r\a\b\e\v\f\\ "); /*setting input to tokens */
+token = strtok(NULL, "\t\n\r\a\b\v\f "); /*setting input to tokens */
 i++;
 }
 tokens[i] = NULL; /* reset to [0] so main can continue*/
