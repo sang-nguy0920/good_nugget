@@ -4,14 +4,13 @@
 * child - child process function
 * @fullpath: full path of exec
 * @tokens: parsed tokens from input stream
-* Description: check num of builtin funcs
+* Description:
 * Return: 0 for success
 */
 int child(char *fullpath, char **tokens)
 {
 pid_t child_pid;
-int stat;
-int execve_stat;
+int stat, execve_stat;
 char **envp = environ;
 
 child_pid = fork(); /*creates new process by duplicating the calling process*/
