@@ -25,7 +25,7 @@ compare = _strncmp((char *)name, var, len);
 	if (compare == 1) /* PATH and var are equal*/
 	{
 	value = strtok(var, "=");
-	value = strtok(NULL, "\n ");
+	value = strtok(NULL, "\n");
 				if (value == '\0')
 				{
 				errors(3);
