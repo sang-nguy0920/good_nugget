@@ -42,6 +42,27 @@ return (0);
 
 int hsh_cd(void)
 {
+return (0);
+}
 
+/**
+* hsh_setenv - function that sets environmental variable
+* @void : void
+* Description: function that sets an env variable
+* Return: 0
+*/
+int hsh_setenv(void)
+{
+return (0);
+}
+
+/**
+* hsh_unsetenv - function that unsets environmental variable
+* @void : void
+* Description: function that unsets an env variable
+* Return: 0
+*/
+int hsh_unsetenv(void)
+{
 return (0);
 }
