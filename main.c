@@ -49,7 +49,7 @@ tokens = parse(line);/*Parse input taking out delims, tokens = input cmd*/
 if (tokens[0] == NULL)
 continue;
 builtin_stat = exec_builtin(tokens); /*search through builtin*/
-if (builtin_stat == 0 || builtin_stat == -1)
+if (builtin_stat == 0 || builtin_stat < 0)
 {
 free(tokens);
 free(line);
