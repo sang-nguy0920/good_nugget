@@ -7,7 +7,7 @@
 
 int hsh_exit(void)
 {
-kill(getpid(), SIGTERM);
+    kill(getpid(), SIGTERM);
 return (-1);
 }
 
