@@ -32,6 +32,8 @@ unsigned int len, num, i;
 		{"exit", hsh_exit},
 		{"env", hsh_env},
 		{"cd", hsh_cd},
+		{"setenv", hsh_setenv},
+		{"unsetenv", hsh_unsetenv},
 		{NULL, NULL}
 	};
 
