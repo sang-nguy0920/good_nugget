@@ -34,7 +34,6 @@ unsigned int len, num, i;
 		{"cd", hsh_cd},
 		{"setenv", hsh_setenv},
 		{"unsetenv", hsh_unsetenv},
-		{"alias", hsh_alias},
 		{NULL, NULL}
 	};
 
