@@ -48,7 +48,7 @@ return (NULL);
 }
 
 /**
-* copy_env_var - makes copy of enviroment var array
+* copy_env - makes copy of enviroment var array
 * @env_copy : pointer to copy
 * @env_len : unsigned int len
 * Description: makes copy of enviroment var array
