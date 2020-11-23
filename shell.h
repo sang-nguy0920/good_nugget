@@ -40,6 +40,7 @@ int hsh_exit(void);
 int hsh_cd(void);
 int hsh_setenv(void);
 int hsh_unsetenv(void);
+int hsh_alias(void);
 int shell_num_builtins(built_s builtin[]);
 void signal_handler(int sig);
 int _strcmp(char *name, char *var, unsigned int len);
