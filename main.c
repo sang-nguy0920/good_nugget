@@ -33,8 +33,7 @@ int main(void)
 {
 char *line, *path, *fullpath, **tokens;
 int alert, builtin_stat, child_stat;
-struct stat buf;/*fd Mode of file, allocated memory for buffer on the stack*/
-
+struct stat buf;
 signal(SIGINT, signal_handler); /*SIGINT ignores interupt signal (ctrl+C) */
 while (1) /* True, infinite loop */
 {
